@@ -1,0 +1,241 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Style */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* Header Style */
+
+header {
+    background-color: red;
+    color: #fff;
+    padding: 30px;
+}
+
+header h1 {
+    float: left;
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Hero Section Style */
+
+#hero {
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #1E90FF;
+}
+
+
+/* About Section Style */
+
+#about {
+    padding: 60px 0;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+/* Facilities Section Style */
+
+#facilities {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+#facilities h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.facility {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.facility img {
+    flex: 0 0 30%;
+    margin-right: 20px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.facility h3 {
+    flex: 0 0 70%;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.facility p {
+    flex: 0 0 70%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Section Style */
+
+#contact {
+    padding: 60px 0;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+form input[type="submit"] {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fff;
+    color-scheme: #fff;
+}
+
+#contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+
+/* Footer Style */
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    color: #333;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    header nav ul {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    header nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #hero {
+        height: 300px;
+    }
+    #hero h2 {
+        font-size: 36px;
+    }
+    #hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .facility img {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
